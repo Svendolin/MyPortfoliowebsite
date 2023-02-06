@@ -14,7 +14,7 @@ body {
 .container {
   width: 100vw;
   height: 100vh;
-  background-image: url(images/background2.png);
+  background-image: url(../images/background2.png);
   background-position: center;
   background-size: cover;
   padding: 0 8%;
@@ -37,12 +37,14 @@ body {
 .content h1{
   font-size: 64px;
   font-weight: 600;
+  text-shadow: 0 0 10px #000;
 }
 
 .content p {
   font-size: 18px;
   font-weight: 400;
   margin-top: 20px;
+  text-shadow: 0 0 10px #000;
 }
 .content h1 span {
   color: #ff3753;
@@ -63,4 +65,49 @@ body {
 .content button img {
   width: 15px;
   margin-left: 10px;
+}
+
+.content button:hover {
+  background: #ff3753;
+  border: 2px solid #ff3753;
+  cursor: pointer;
+}
+
+/* To allign the four time-<div> horizontally */
+.launch-time {
+  display: flex;
+}
+
+/* The flex-basis CSS property sets the initial main size of a flex item. 
+It sets the size of the content box unless otherwise set with box-sizing.*/
+.launch-time div {
+  flex-basis: 100px;
+}
+
+.launch-time div p {
+  font-size: 60px;
+  margin-bottom: 14px;
+}
+
+.launch-time div span {
+  padding-left: 5px;
+}
+
+.rocket {
+  width: 250px;
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  animation: rocket 4s linear infinite;
+}
+
+@keyframes rocket {
+  0% {
+    bottom: 0;
+    opacity: 0;
+  }
+  100% {
+    bottom: 105%;
+    opacity: 1;
+  }
 }
