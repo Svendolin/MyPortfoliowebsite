@@ -8,8 +8,22 @@
   text-decoration: none;
 }
 
+:root {
+  /* Fonts */
+  --main-font: 'lato', sans-serif;
+  /* Colors */
+  --main-title-color: #ff3753;
+  /* --gradient: linear-gradient(90deg, #4a1196 0%, #542aba 100%); */
+  --main-bg-gradient: linear-gradient(to right, #4a1196, #542aba, #8d39a8);
+  --main-bg-color: #4a1196;
+  --second-bg-color: #542aba;
+  --third-bg-color: #8d39a8;
+  --main-text-color: #ffffff;
+  --main-border-color: #e39263;
+}
+
 body {
-  font-family: 'lato', sans-serif;
+  font-family: var(--main-font);
 }
 
 /* === Header === */
