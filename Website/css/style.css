@@ -1,0 +1,15 @@
+/* === Small CSS Reset === */
+*{
+  margin: 0;
+  padding: 0;
+}
+*, *::after, *::before{
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'lato', sans-serif;
+}
+
+/* === Header === */
