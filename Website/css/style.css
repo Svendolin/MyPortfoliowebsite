@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: 'title-font';
-  src: url('../font/SE.otf');
+  src: url('../font/SP.otf');
 }
 
 body {
@@ -45,8 +45,20 @@ body {
 }
 
 .container {
-  padding: 10px 10%; /* 10px Up + Down / 10% Left + Right */
+  padding: 10px 5%; /* 10px Up + Down / 5% Left + Right */
 }
+
+.header-text {
+  margin-top: 20%;
+  font-size: 30px;
+}
+
+.header-text h1 {
+  font-size: 60px;
+  margin-top: 2px;
+}
+
+/* === Navigation === */
 
 nav {
   display: flex;
@@ -68,6 +80,23 @@ nav ul li {
 nav ul li a {
   color: var(--main-text-color);
   text-decoration: none;
-  font-size: 18px;
+  font-size: 22px;
   font-family: title-font;
+  position: relative;
+}
+
+/* Animated Underline */
+nav ul li a::after {
+  content: '';
+  width: 0; /* Width of the line to make it invisible */
+  height: 3px;
+  background: var(--main-title-color);
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
 }
