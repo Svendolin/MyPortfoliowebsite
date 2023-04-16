@@ -1,6 +1,6 @@
 // function to set the date we're counting down to a specific date:
 
-let countDownDate = new Date("Mar 19, 2023 00:00:00").getTime();
+let countDownDate = new Date("Apr 30, 2023 00:00:00").getTime();
 // Update the count down every 1 second:
 let x = setInterval(function () {
     let now = new Date().getTime();

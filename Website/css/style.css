@@ -58,6 +58,10 @@ body {
   margin-top: 2px;
 }
 
+.header-text h1 span {
+  color: var(--main-title-color);
+}
+
 /* === Navigation === */
 
 nav {
