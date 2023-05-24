@@ -47,25 +47,25 @@
     <div class="container">
       <div class="row">
         <div class="about-col-1">
-          <img src="images/rocket.png" alt="CHANGE ME">
+          <img src="images/Me.jpg" alt="Profile Picture of myself">
         </div>
         <div class="about-col-2">
           <h1 class="sub-title">About Me</h1>
           <p>Ich haue gerne in die Tasten oder tippe leidenschaftlich
-            auf den Mobilgeräten herum, um mich von neuen Ideen und teschnischen
+            auf den Mobilgeräten herum, <br> um mich von neuen Ideen und teschnischen
             Errungenschaften inspirieren zu lassen!<br>
             Mein Ziel ist es, die digitale Welt mit meinen Ideen zu bereichern und Kundinnen und 
-            Kunden mit meinen Dienstleistungen im Bereich UX/UI, Webdevelopment, Marketing
+            Kunden <br> mit meinen Dienstleistungen im Bereich UX/UI, Webdevelopment, Marketing
             und Social Media zu begeistern.<br>
             Die gesammelten Erfahrungen setze ich in privaten Projekten sowie als Kundenauftrag
             in die Tat um.</p>
 
             <div class="tab-titles">
-              <p class="tab-links active-link">Skills</p> <!-- This one will be permanentely active -->
-              <p class="tab-links">Experience</p>
-              <p class="tab-links">Education</p>
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p> <!-- This one will be permanentely active -->
+              <p class="tab-links" onclick="opentab('experience')">Erfahrungen</p>
+              <p class="tab-links" onclick="opentab('education')">Ausbildung</p>
             </div>
-            <div class="tab-contents">
+            <div id="skills" class="tab-contents active-tab"> <!-- This will be the active tab -->
               <ul>
                 <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                 <li><span>Web Development</span><br>Web App Development (Frontend / Backend)</li>
@@ -73,12 +73,34 @@
                 <li><span>Social Media Visualist</span><br>Digital Content Creation</li>
               </ul>
             </div>
+            <div id="experience" class="tab-contents">
+              <ul>
+                <li><span>2018 - 2020</span><br>Praktika bei BDE und Atelier Estimo (Architektur)</li>
+                <li><span>2020 - current</span><br>Web- / Sales- / Marketing Assistence bei Doramas.ch</li>
+                <li><span>2020 - current</span><br>Multimedia Content Creator von Toycarsaddict.club</li>
+                <li><span>2020 - 2023</span><br>Webadministration und Client Support Service bei Printer.ch</li>
+                <li><span>2022 - current</span><br>Productdesign bei SevenA (freelance)</li>
+              </ul>
+            </div>
+            <div id="education" class="tab-contents">
+              <ul>
+                <li><span>2013 - 2017</span><br>Gymnasium mit Hauptabschluss in Design</li>
+                <li><span>2019 - 2020</span><br>Fortbildungskurs in Digital- / Multimedia Design</li>
+                <li><span>2020 - 2022</span><br>Diploma of Education, Webdevelopment, Webdesign and Marketing</li>
+                <li><span>2023 - Current</span><br>Bachelor of Arts Webdesign & Development</li>
+              </ul>
+            </div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- 32:27 -->
+  <!-- Services -->
+<div id="services">
+  <div class="container">
+
+  </div>
+</div>
 
   
 </body>

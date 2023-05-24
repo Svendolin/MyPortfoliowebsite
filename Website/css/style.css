@@ -39,7 +39,7 @@ body {
 #header {
   width: 100%;
   height: 100vh;
-  background: url('../images/background3.png');
+  background: url('../images/background4.png');
   background-size: cover;
   background-position: center;
 }
@@ -63,7 +63,7 @@ body {
   color: var(--main-title-color);
 }
 
-/* === Navigation === */
+/* ====================== Navigation ======================= */
 
 nav {
   display: flex;
@@ -71,7 +71,7 @@ nav {
   align-items: center;
   flex-wrap: wrap;
   background: rgba(0, 0, 0, 0.4);
-  padding: 5px 10px;
+  padding: 5px 20px;
 }
 
 .logo {
@@ -120,7 +120,7 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
-/* === About === */
+/* ======================= About ======================= */
 
 #about {
   padding: 80px 5%; /* 80px Up + Down / 5% Left + Right */
@@ -140,7 +140,7 @@ nav ul li a:hover::after {
 .about-col-1 img {
   width: 100%;
   border-radius: 15px;
-  border: solid 1px white;
+  /* border: solid 1px white; */
 }
 
 .about-col-2 {
@@ -152,6 +152,7 @@ nav ul li a:hover::after {
   font-size: 50px;
   font-weight: 600;
   color: var(--main-text-color);
+  margin-bottom: 10px;
 }
 
 .tab-titles {
@@ -194,4 +195,11 @@ nav ul li a:hover::after {
   font-size: 16px;
 }
 
+.tab-contents {
+  display: none;
+}
+
+.tab-contents.active-tab {
+  display: block; /* To make sure this tab will be visible */
+}
 
