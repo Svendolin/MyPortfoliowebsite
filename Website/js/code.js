@@ -12,6 +12,7 @@ function opentab(tabname){
     for(tabcontent of tabcontents){
       tabcontent.classList.remove("active-tab");
   }
+  // Add active-link and active-content to the clicked tablink and tabcontent.
     event.currentTarget.classList.add("active-link");
     document.getElementById(tabname).classList.add("active-tab");
 
