@@ -12,7 +12,8 @@
   /* Fonts */
   --main-font: 'lato', sans-serif;
   /* Colors */
-  --main-title-color: #ff3753;
+  --main-title-color: #ff377a;
+  --main-icon-color: #37e1ff;
   /* --gradient: linear-gradient(90deg, #4a1196 0%, #542aba 100%); */
   --main-bg-gradient: linear-gradient(to right, #5e3294,#4a1196, #4c23ab, #391e75);
   --main-bg-color: #5e3294;
@@ -251,7 +252,7 @@ nav ul li a:hover::after {
   transform: translateY(-10px);
 }
 
-/* ======================= Portfolio ======================= */
+/* ======================= Projekte ======================= */
 
 #portfolio {
   padding: 30px 5%;
@@ -286,7 +287,7 @@ nav ul li a:hover::after {
 .layer {
   width: 100%;
   height: 0%; /* 0% means it will be hidden */
-  background: linear-gradient(rgba(0, 0, 0, 0.8), #ff3753);
+  background: linear-gradient(rgba(0, 0, 0, 0.8), var(--main-title-color));
   border-radius: 10px;
   position: absolute;
   left: 0;
@@ -384,12 +385,12 @@ because we used it in the about section as well */
   text-decoration: none;
   font-size: 30px;
   margin-right: 15px;
-  color: var(--main-border-color);
+  color: var(--main-icon-color);
   display: inline-block;
   transition: transform 0.5s;
 }
 
 .social-icons a:hover {
-  color: var(--main-title-color);
+  color: var(--main-text-color);
   transform: translateY(-5px);
 }
