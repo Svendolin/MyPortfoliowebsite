@@ -394,3 +394,49 @@ because we used it in the about section as well */
   color: var(--main-text-color);
   transform: translateY(-5px);
 }
+
+.btn.btn2{
+  display: inline-block;
+  background: var(--main-title-color);
+}
+
+.btn.btn3{
+  display: inline-block;
+  background: var(--main-title-color);
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.btn.btn2:hover, .btn.btn3:hover {
+  background: none;
+}
+
+.contact-right form{
+  width: 100%;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 15px 0;
+  border: 1px solid var(--main-title-color);
+  border-radius: 6px;
+  background: var(--second-bg-color);
+  color: var(--main-text-color);
+  font-family: var(--main-font);
+  font-size: 16px;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: rgba(0, 0, 0, 0.4);
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+.copyright i {
+  color: var(--main-title-color);
+}
