@@ -1,0 +1,8 @@
+/* css for small screens" */
+
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url("../images/bg4resp.png");
+    height: 80vh;
+  }
+}
