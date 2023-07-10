@@ -3,6 +3,15 @@
 @media only screen and (max-width: 600px) {
   #header {
     background-image: url("../images/bg4resp.png");
-    height: 80vh;
+    height: 40rem;
+  }
+
+  .header-text {
+    margin-top: 66%;
+    font-size: 16px;
+  }
+
+  .header-text h1 {
+    font-size: 30px;
   }
 }
