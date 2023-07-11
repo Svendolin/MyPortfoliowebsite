@@ -34,14 +34,17 @@
   <div id="header">
     <div class="container">
       <nav>
-        <img class="logo" src="images/SP_Logo.png" alt="image of svendolin productions logo">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Kontakt</a></li>
+        <img class="logo" href="#header" src="images/SP_Logo.png" alt="image of svendolin productions logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about-to-scroll">About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
+        <i class="fas fa-solid fa-burger" onclick="openmenu()"></i>
+        
       </nav>
       <div class="header-text">
         <p>Webdev-Visualist</p>
@@ -56,7 +59,7 @@
         <div class="about-col-1">
           <img src="images/Cyberimage.webp" alt="Profile Picture of myself">
         </div>
-        <div class="about-col-2">
+        <div class="about-col-2" id="about-to-scroll">
           <h2 class="sub-title">About Mi</h2>
           <p>Ich haue gerne in die Tasten und tippe leidenschaftlich
             auf den Mobilgeräten herum, um mich von neuen Ideen und teschnischen
@@ -109,22 +112,38 @@
       <div>
         <i class="fa-solid fa-code"></i>
         <h2>Web Development</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi maxime obcaecati quas esse, corrupti ex officiis fugit? Repellat quod ut fugiat possimus veritatis enim ducimus quos, tempore corporis quo, unde ipsum autem animi cupiditate id, dignissimos cumque labore impedit culpa nisi est adipisci. Sed nam incidunt, autem similique expedita optio, iusto id ab dolor magnam recusandae asperiores tempora pariatur.</p>
-        <a href="#">Learn More</a>
+        <p>Das Erstellen und Wartung von Webseiten und Webanwendungen ist immer eine spannende und zugleich
+          fordende Aufgabe. Angefangen von den Front-End-Technologien wie HTML, CSS, JavaScript oder CMS Systeme, 
+          um die Benutzeroberfläche zu gestalten und interaktive Elemente zu implementieren bis hin 
+          zu der Backend-Entwicklung, bei der Serverseitige Technologien wie Datenbanken und Frameworks 
+          verwendet werden, um die Funktionalität und das Datenmanagement der Website zu unterstützen.
+        </p>
+        <a href="https://github.com/Svendolin" target=”_blank” >Mehr dazu</a>
       </div>
 
       <div>
         <i class="fa-solid fa-crop"></i>
         <h2>UI / UX Design</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi maxime obcaecati quas esse, corrupti ex officiis fugit? Repellat quod ut fugiat possimus veritatis enim ducimus quos, tempore corporis quo, unde ipsum autem animi cupiditate id, dignissimos cumque labore impedit culpa nisi est adipisci. Sed nam incidunt, autem similique expedita optio, iusto id ab dolor magnam recusandae asperiores tempora pariatur.</p>
-        <a href="#">Learn More</a>
+        <p>Jederzeit ein wichtiges Anliegen ist die Gestaltung von digitalen Produkten und Dienstleistungen,
+          die Layout, Farben und Interaktionselementen optimal verknüpfen (UI). Dies im Einklang mit 
+          spannenden Benutzerlebnissen (UX) teste ich gerne mit allerlei grafischen Mitteln, wie 
+          Adobe XD, Indesign, Illustrator, Photoshop sowie Webflow.
+        </p>
+        <a href="#" download class="specialbtn">Mehr dazu</a>
       </div>
       
       <div>
         <i class="fa-regular fa-image"></i>
         <h2>Content Creation</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure commodi maxime obcaecati quas esse, corrupti ex officiis fugit? Repellat quod ut fugiat possimus veritatis enim ducimus quos, tempore corporis quo, unde ipsum autem animi cupiditate id, dignissimos cumque labore impedit culpa nisi est adipisci. Sed nam incidunt, autem similique expedita optio, iusto id ab dolor magnam recusandae asperiores tempora pariatur.</p>
-        <a href="#">Learn More</a>
+        <p>In Content Creation erstelle ich gerne ansprechende und relevante Inhalte,
+          wie Texte, Grafiken und Videos. Diese Inhalte verbreite ich über verschiedene
+          Kanäle und Plattformen, um die enstprechende Zielgruppe anzusprechen und zu engagieren.
+          Mein Ziel besteht darin, Mehrwert zu bieten und Informationen zu teilen, um bestimmte 
+          Unternehmensziele zu erreichen. Dies umfasst die Recherche, Planung, Produktion, 
+          Überarbeitung und Veröffentlichung von Inhalten. 
+          Durch hochwertige Inhalte kann ich die Präsenz stärken und langfristige Beziehungen aufbauen.
+        </p>
+        <a href="https://beacons.ai/toycarsaddict" target=”_blank” >Mehr dazu</a>
       </div>      
     </div>
   </div>
@@ -140,7 +159,7 @@
           <h3>Toycarsaddict.club</h3>
           <p>Meine persönliche Herzensangelegenheit, wo Hobby und Beruf zusammenfindet: Eine Webseite als Kernstück
             für Modellautosammler.
-            Das Projekt wurde mit dem Wordpress CMS erstellt, dazu Elementor als Pagebuilder verwendet, Plugins installiert sowie HTML, CSS und PHP eingebunden.
+            Das Projekt wurde mit dem Wordpress CMS erstellt, dazu Elementor als Pagebuilder verwendet, Plugins installiert sowie weiteres HTML, CSS und PHP eingebunden.
           </p>
           <a href="https://toycarsaddict.club/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
@@ -150,11 +169,12 @@
         <img src="images/work3.webp" alt="">
         <div class="layer">
           <h3>Partum Media</h3>
-          <p>Dieses Projekt war Teil der Bachelorarbeit 2023 der SAE Zürich. Hier galt es eine
-            Webseite für eine fiktive Webagentur zu erstellen. Die Webseite wurde
-            mit HTML, CSS, JavaScript durch das Framework Angular umgesetzt.</p>
+          <p>Dieses Projekt wird Teil der Bachelorarbeit 2023 der SAE Zürich. Hier gilt es eine
+            Webseite für eine fiktive Webagentur zu erstellen, die mittels HTML, CSS, JavaScript 
+            durch das Framework Angular umgesetzt wird. Als CSS-Frontend-Framework
+            nutzen wir Bootstrap. <br> RELEASE DATE ist am 12.08.23</p>
           </p>
-          <a href="https://github.com/Svendolin/Partum-Media-Website" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          <a href="https://github.com/Partum-Media/Website" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
         </div>
       </div>
       
@@ -169,7 +189,7 @@
         </div>
       </div>
     </div>
-    <a href="#" class="btn">See more</a>
+    <a href="#" class="btn">More coming soon!</a>
   </div>
 </div>
 <!------------- contact ------------>
@@ -187,12 +207,13 @@
         <a href="images/cv/CV_Portfolio.pdf" download class="btn btn2">CV Herunterladen</a>
       </div>
       <div class="contact-right">
-        <form>
+        <form name="submit-to-google-sheet">
           <input type="text" name="Name" placeholder="Dein Name" required>
-          <input type="email" name="email" placeholder="Deine Email" required>
+          <input type="email" name="Email" placeholder="Deine Email" required>
           <textarea name="Message" rows="6" placeholder="Was möchtest du mir mitteilen?"></textarea>
           <button type="submit" class="btn btn3">Abschicken</button>
         </form>
+        <span id="msg"></span>
       </div>
     </div>
   </div>

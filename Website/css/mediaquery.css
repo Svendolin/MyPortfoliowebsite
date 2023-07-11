@@ -1,6 +1,11 @@
-/* css for small screens" */
+/* Display default for icons in navbar */
+nav .fas {
+  display: none;
+}
 
-@media only screen and (max-width: 600px) {
+/* css for small screens" */
+@media only screen and (max-width: 650px) {
+  /* --- Header and navigation --- */
   #header {
     background-image: url("../images/bg4resp.png");
     height: 40rem;
@@ -14,4 +19,74 @@
   .header-text h1 {
     font-size: 30px;
   }
+  nav .fas {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background-color: var(--main-title-color);
+    position: fixed;
+    top: 0;
+    right: -120px; /* Side navigation moved to the right to be hidden */
+    width: 120px;
+    height: 38vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+    text-align: center;
+  }
+  nav ul .fas {
+    position: absolute;
+    top: 25px;
+    left: 44%;
+    cursor: pointer;
+  }
+
+  /* --- ABOUT Section --- */
+
+  #about {
+    padding: 0 5%;
+  }
+  .sub-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .about-col-1,
+  .about-col-2 {
+    flex-basis: 100%; /* From 65 and 30 of the wider screen to full 100% in mobile */
+    padding-left: 0;
+  }
+  .about-col-1 {
+    margin-bottom: 30px;
+  }
+  .about-col-2 p {
+    font-size: 15px;
+  }
+  .tab-links {
+    font-weight: bold;
+    margin: 25px 15px 20px 0;
+  }
+  .tab-titles {
+    flex-direction: row;
+    margin: 0;
+  }
+
+  /* --- CONTACT Section --- */
+
+  .contact-left, .contact-right {
+    flex-basis: 100%;
+    text-align: center;
+  }
+
+  /* --- Footer Section --- */
+
+  .copyright {
+    font-size: 10px;
+  }
+
 }

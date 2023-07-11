@@ -29,6 +29,10 @@
   src: url('../font/SP.otf');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--main-font);
   background: var(--main-bg-gradient);
@@ -241,12 +245,29 @@ nav ul li a:hover::after {
   margin-bottom: 15px
 }
 
+.services-list div p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
 .services-list div a {
   text-decoration: none;
   color: var(--main-text-color);
   font-size: 12px;
-  margin-top: 20px;
   display: inline-block;
+  border: solid 1px var(--main-text-color);
+  border-radius: 15px;
+  padding: 5px 10px;
+}
+
+.services-list div a.specialbtn {
+  margin-top: 40px;
+}
+
+.services-list div a:hover {
+  background: var(--main-text-color);
+  color: var(--main-title-color);
+  font-weight: 500;
 }
 
 .services-list div:hover {
@@ -441,4 +462,13 @@ form input, form textarea {
 
 .copyright i {
   color: var(--main-title-color);
+}
+
+#msg {
+  color: var(--main-icon-color);
+  margin-top: -20px;
+  display: block;
+  font-size: 20px;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px white;
 }
