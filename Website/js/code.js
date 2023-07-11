@@ -70,3 +70,26 @@ form.addEventListener('submit', e => {
 //     }
 // }
 
+const loadmore = document.getElementById("load-more");
+
+let currentItems = 3;
+loadmore.addEventListener("click", (e) => {
+    const elementList = [...document.querySelectorAll(".work-list .work")];
+    e.target.classList.add("show-loader");
+
+    for (let i = currentItems; i < currentItems + 3; i++) {
+        setTimeout(function () {
+            e.target.classList.remove("show-loader");
+            if (elementList[i]) {
+                elementList[i].style.display = "flex";
+            }
+        }, 3000)
+    }
+    currentItems += 3;
+    //hide load more button if all items are loaded
+    if (currentItems >= elementList.length) {
+        event.target.classList.add("loaded");
+    }
+
+});
+
