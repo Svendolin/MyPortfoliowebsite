@@ -1,422 +1,360 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Additional Meta Elements -->
-    <meta
-      name="keywords"
-      content="Svendolin Productions Portfolio Website made with HTML, CSS and JAVASCRIPT and lots of love"
-    />
-    <meta
-      name="description"
-      content="This is my official Portfolio Website featuring my work, webprojects, personality, ambitions, classifications,
-  targets as a webdeveloper in case of frontend and backend solutions"
-    />
-    <meta name="author" content="Sven Kamm aka Svendolin" />
-    <title>Svendolin-Productions</title>
-    <!-- Link tags-->
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/mediaquery.css" />
-    <!-- Link to Favicon done with https://realfavicongenerator.net/ -->
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="favicon/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="favicon/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="favicon/favicon-16x16.png"
-    />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-    <link
-      rel="mask-icon"
-      href="favicon/safari-pinned-tab.svg"
-      color="#5bbad5"
-    />
-    <!-- CDNJS to Fontawesome. What is CDNJS? Here ya go: https://www.belugacdn.com/blog/cdn/cdnjs/ -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <!-- Btw you can also use the kit directly from fontawesome -->
-    <!-- <script src="https://kit.fontawesome.com/295eaabed0.js" crossorigin="anonymous"></script> -->
-    <!-- AOS Animation On Scroll Library from https://michalsnik.github.io/aos/ -->
-    <link rel="stylesheet" href="css/aos.css" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="theme-color" content="#ffffff" />
-    <!----------------------------------------------------------------------------------------------------------------->
-    <!-- AOS Animation on Scroll Library for JS -->
-    <script src="js/aos.js"></script>
-    <!-- Script tags-->
-    <script src="js/code.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/c4254e24a8.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <!------------ Header ------------>
-    <div id="header">
-      <div class="container">
-        <nav>
-          <img
-            class="logo"
-            href="#header"
-            src="images/SP_Logo.png"
-            alt="image of svendolin productions logo"
-            data-aos="fade-down-right"
-          />
-          <ul id="sidemenu">
-            <li><a href="#header">Home</a></li>
-            <li><a href="#about-to-scroll">About</a></li>
-            <li><a href="#services">Service</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-            <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
-          </ul>
-          <i class="fas fa-solid fa-burger" onclick="openmenu()"></i>
-        </nav>
-        <div class="header-text">
-          <p data-aos="fade-right" data-aos-delay="100">Webdev-Visualist</p>
-          <h1 data-aos="fade-right" data-aos-delay="400">
-            Grüezi, I bi de <span>Svendolin</span> us dr Schwiiz!
-          </h1>
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Additional Meta Elements -->
+  <meta name="keywords"
+    content="Svendolin Productions Portfolio Website made with HTML, CSS and JAVASCRIPT and lots of love" />
+  <meta name="description" content="This is my official Portfolio Website featuring my work, webprojects, personality, ambitions, classifications,
+  targets as a webdeveloper in case of frontend and backend solutions" />
+  <meta name="author" content="Sven Kamm aka Svendolin" />
+  <title>Svendolin-Productions</title>
+  <!-- Link tags-->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/mediaquery.css" />
+  <!-- Link to Favicon done with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+  <link rel="manifest" href="favicon/site.webmanifest" />
+  <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+  <!-- CDNJS to Fontawesome. What is CDNJS? Here ya go: https://www.belugacdn.com/blog/cdn/cdnjs/ -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Btw you can also use the kit directly from fontawesome -->
+  <!-- <script src="https://kit.fontawesome.com/295eaabed0.js" crossorigin="anonymous"></script> -->
+  <!-- AOS Animation On Scroll Library from https://michalsnik.github.io/aos/ -->
+  <link rel="stylesheet" href="css/aos.css" />
+  <!-- Google Search Console Provement -->
+  <meta name="google-site-verification" content="4_bnr08AMayiyTdhpIcdIFvpiXBX4QfAF0TkTYrXcBw" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!----------------------------------------------------------------------------------------------------------------->
+  <!-- AOS Animation on Scroll Library for JS -->
+  <script src="js/aos.js"></script>
+  <!-- Script tags-->
+  <script src="js/code.js" defer></script>
+  <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!------------ Header ------------>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img class="logo" href="#header" src="images/SP_Logo.png" alt="image of svendolin productions logo" />
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about-to-scroll">About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Kontakt</a></li>
+          <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-solid fa-burger" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p data-aos="fade-right" data-aos-delay="100">Webdev-Visualist</p>
+        <h1 data-aos="fade-right" data-aos-delay="400">
+          Grüezi, I bi de <span>Svendolin</span> us dr Schwiiz!
+        </h1>
       </div>
     </div>
-    <!------------ About ------------>
-    <div id="about">
-      <div class="container">
-        <div class="row" data-aos="fade-up">
-          <!-- AOS Animation on Scroll -->
-          <div class="about-col-1" data-aos="zoom-in" data-aos-delay="200">
-            <img src="images/Cyberimage.webp" alt="Profile Picture of myself" />
-          </div>
-          <div class="about-col-2" id="about-to-scroll">
-            <h2 class="sub-title">About Mi</h2>
-            <p>
-              Ich haue gerne in die Tasten und tippe leidenschaftlich auf den
-              Mobilgeräten herum, um mich von neuen Ideen und teschnischen
-              Errungenschaften inspirieren zu lassen! Mein Bestreben ist es, die digitale Welt mit meiner kreativen
-              Vision zu bereichern und Kundinnen sowie Kunden durch meine
-              umfassenden Dienstleistungen im Bereich UX/UI, Webentwicklung,
-              Marketing und Social Media zu begeistern.
-            </p>
+  </div>
+  <!------------ About ------------>
+  <div id="about">
+    <div class="container">
+      <div class="row" data-aos="fade-up">
+        <!-- AOS Animation on Scroll -->
+        <div class="about-col-1" data-aos="zoom-in" data-aos-delay="200">
+          <img src="images/Cyberimage.webp" alt="Profile Picture of myself" />
+        </div>
+        <div class="about-col-2" id="about-to-scroll">
+          <h2 class="sub-title">About Mi</h2>
+          <p>
+            Ich haue gerne in die Tasten und tippe leidenschaftlich auf den
+            Mobilgeräten herum, um mich von neuen Ideen und teschnischen
+            Errungenschaften inspirieren zu lassen! Mein Bestreben ist es, die
+            digitale Welt mit meiner kreativen Vision zu bereichern und
+            Kundinnen sowie Kunden durch meine umfassenden Dienstleistungen im
+            Bereich UX/UI, Webentwicklung, Marketing und Social Media zu
+            begeistern.
+          </p>
 
-            <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
-                Skills
-              </p>
-              <!-- This one will be permanentely active -->
-              <p class="tab-links" onclick="opentab('experience')">
-                Erfahrungen
-              </p>
-              <p class="tab-links" onclick="opentab('education')">Ausbildung</p>
-            </div>
-            <div id="skills" class="tab-contents active-tab">
-              <!-- This will be the active tab -->
-              <ul>
-                <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
-                <li>
-                  <span>Web Development</span><br />Web App Development
-                  (Frontend / Backend)
-                </li>
-                <li>
-                  <span>Marketing Manager</span><br />SEO / SEA Optimazation,
-                  Project Management
-                </li>
-                <li>
-                  <span>Social Media Visualist</span><br />Digital Content
-                  Creation
-                </li>
-              </ul>
-            </div>
-            <div id="experience" class="tab-contents">
-              <ul>
-                <li>
-                  <span>2018 - 2020</span><br />Praktika bei BDE und Atelier
-                  Estimo (Architektur)
-                </li>
-                <li>
-                  <span>2020 - Current</span><br />Web- / Sales- / Marketing
-                  Assistence bei Doramas.ch
-                </li>
-                <li>
-                  <span>2020 - Current</span><br />Multimedia Content Creator
-                  von Toycarsaddict.club
-                </li>
-                <li>
-                  <span>2020 - 2023</span><br />Webadministration und Client
-                  Support Service bei Printer.ch, RDSoft.ch, Dasspiel.ch
-                </li>
-                <li>
-                  <span>2022 - Current</span><br />Productdesign bei SevenA
-                  (freelance)
-                </li>
-              </ul>
-            </div>
-            <div id="education" class="tab-contents">
-              <ul>
-                <li>
-                  <span>2013 - 2017</span><br />Gymnasium mit Hauptabschluss in
-                  Design
-                </li>
-                <li>
-                  <span>2019 - 2020</span><br />Fortbildungskurs in Digital- /
-                  Multimedia Design
-                </li>
-                <li>
-                  <span>2020 - 2022</span><br />Diploma of Education,
-                  Webdevelopment, Webdesign and Marketing
-                </li>
-                <li>
-                  <span>2023 - Current</span><br />Bachelor of Arts Webdesign &
-                  Development
-                </li>
-              </ul>
-            </div>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">
+              Skills
+            </p>
+            <!-- This one will be permanentely active -->
+            <p class="tab-links" onclick="opentab('experience')">
+              Erfahrungen
+            </p>
+            <p class="tab-links" onclick="opentab('education')">Ausbildung</p>
+          </div>
+          <div id="skills" class="tab-contents active-tab">
+            <!-- This will be the active tab -->
+            <ul>
+              <li><span>UI/UX</span><br />Designing Web/App interfaces</li>
+              <li>
+                <span>Web Development</span><br />Web App Development
+                (Frontend / Backend)
+              </li>
+              <li>
+                <span>Marketing Manager</span><br />SEO / SEA Optimazation,
+                Project Management
+              </li>
+              <li>
+                <span>Social Media Visualist</span><br />Digital Content
+                Creation
+              </li>
+            </ul>
+          </div>
+          <div id="experience" class="tab-contents">
+            <ul>
+              <li>
+                <span>2018 - 2020</span><br />Praktika bei BDE und Atelier
+                Estimo (Architektur)
+              </li>
+              <li>
+                <span>2020 - Current</span><br />Web- / Sales- / Marketing
+                Assistence bei Doramas.ch
+              </li>
+              <li>
+                <span>2020 - Current</span><br />Multimedia Content Creator
+                von Toycarsaddict.club
+              </li>
+              <li>
+                <span>2020 - 2023</span><br />Webadministration und Client
+                Support Service bei Printer.ch, RDSoft.ch, Dasspiel.ch
+              </li>
+              <li>
+                <span>2022 - Current</span><br />Productdesign bei SevenA
+                (freelance)
+              </li>
+            </ul>
+          </div>
+          <div id="education" class="tab-contents">
+            <ul>
+              <li>
+                <span>2013 - 2017</span><br />Gymnasium mit Hauptabschluss in
+                Design
+              </li>
+              <li>
+                <span>2019 - 2020</span><br />Fortbildungskurs in Digital- /
+                Multimedia Design
+              </li>
+              <li>
+                <span>2020 - 2022</span><br />Diploma of Education,
+                Webdevelopment, Webdesign and Marketing
+              </li>
+              <li>
+                <span>2023 - Current</span><br />Bachelor of Arts Webdesign &
+                Development
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!------------ Services ------------>
-    <div id="services">
-      <div class="container" data-aos="fade-up">
-        <h2 class="sub-title">Mein Service</h2>
-        <div class="services-list">
-          <div data-aos="flip-left" data-aos-delay="300">
-            <i class="fa-solid fa-code"></i>
-            <h2>Web Development</h2>
-            <p>
-              Das Erstellen und Wartung von Webseiten und Webanwendungen ist
-              immer eine spannende und zugleich fordende Aufgabe. Angefangen von
-              den Front-End-Technologien wie HTML, CSS, JavaScript oder CMS
-              Systeme, um die Benutzeroberfläche zu gestalten und interaktive
-              Elemente zu implementieren bis hin zu der Backend-Entwicklung, bei
-              der Serverseitige Technologien wie Datenbanken und Frameworks
-              verwendet werden, um die Funktionalität und das Datenmanagement
-              der Website zu unterstützen.
-            </p>
-            <a href="https://github.com/Svendolin" target="”_blank”"
-              >Mehr dazu</a
-            >
-          </div>
+  <!------------ Services ------------>
+  <div id="services">
+    <div class="container" data-aos="fade-up">
+      <h2 class="sub-title">Mein Service</h2>
+      <div class="services-list">
+        <div data-aos="flip-left" data-aos-delay="300">
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Development</h2>
+          <p>
+            Das Erstellen und Wartung von Webseiten und Webanwendungen ist
+            immer eine spannende und zugleich fordende Aufgabe. Angefangen von
+            den Front-End-Technologien wie HTML, CSS, JavaScript oder CMS
+            Systeme, um die Benutzeroberfläche zu gestalten und interaktive
+            Elemente zu implementieren bis hin zu der Backend-Entwicklung, bei
+            der Serverseitige Technologien wie Datenbanken und Frameworks
+            verwendet werden, um die Funktionalität und das Datenmanagement
+            der Website zu unterstützen.
+          </p>
+          <a href="https://github.com/Svendolin" target="”_blank”">Mehr dazu</a>
+        </div>
 
-          <div data-aos="flip-up" data-aos-delay="400">
-            <i class="fa-solid fa-crop"></i>
-            <h2>UI / UX Design</h2>
-            <p>
-              Jederzeit ein wichtiges Anliegen ist die Gestaltung von digitalen
-              Produkten und Dienstleistungen, die Layout, Farben und
-              Interaktionselementen optimal verknüpfen (UI). Dies im Einklang
-              mit spannenden Benutzerlebnissen (UX) teste ich gerne mit allerlei
-              grafischen Mitteln, wie Adobe XD, Indesign, Illustrator, Photoshop
-              sowie Webflow.
-            </p>
-            <a
-              href="images/ui-ux/RYR_RentYourRollator Screendesign.pdf"
-              download
-              class="specialbtn"
-              >Beispiel herunterladen</a
-            >
-          </div>
+        <div data-aos="flip-up" data-aos-delay="400">
+          <i class="fa-solid fa-crop"></i>
+          <h2>UI / UX Design</h2>
+          <p>
+            Jederzeit ein wichtiges Anliegen ist die Gestaltung von digitalen
+            Produkten und Dienstleistungen, die Layout, Farben und
+            Interaktionselementen optimal verknüpfen (UI). Dies im Einklang
+            mit spannenden Benutzerlebnissen (UX) teste ich gerne mit allerlei
+            grafischen Mitteln, wie Adobe XD, Indesign, Illustrator, Photoshop
+            sowie Webflow.
+          </p>
+          <a href="images/ui-ux/RYR_RentYourRollator Screendesign.pdf" download class="specialbtn">Beispiel
+            herunterladen</a>
+        </div>
 
-          <div data-aos="flip-right" data-aos-delay="500">
-            <i class="fa-regular fa-image"></i>
-            <h2>Content Creation</h2>
-            <p>
-              In Content Creation erstelle ich gerne ansprechende und relevante
-              Inhalte, wie Texte, Grafiken und Videos. Diese Inhalte verbreite
-              ich über verschiedene Kanäle und Plattformen, um die enstprechende
-              Zielgruppe anzusprechen und zu engagieren. Mein Ziel besteht
-              darin, Mehrwert zu bieten und Informationen zu teilen, um
-              bestimmte Unternehmensziele zu erreichen. Dies umfasst die
-              Recherche, Planung, Produktion, Überarbeitung und Veröffentlichung
-              von Inhalten. Durch hochwertige Inhalte kann ich die Präsenz
-              stärken und langfristige Beziehungen aufbauen.
-            </p>
-            <a href="https://beacons.ai/toycarsaddict" target="”_blank”"
-              >Mehr dazu</a
-            >
-          </div>
+        <div data-aos="flip-right" data-aos-delay="500">
+          <i class="fa-regular fa-image"></i>
+          <h2>Content Creation</h2>
+          <p>
+            In Content Creation erstelle ich gerne ansprechende und relevante
+            Inhalte, wie Texte, Grafiken und Videos. Diese Inhalte verbreite
+            ich über verschiedene Kanäle und Plattformen, um die enstprechende
+            Zielgruppe anzusprechen und zu engagieren. Mein Ziel besteht
+            darin, Mehrwert zu bieten und Informationen zu teilen, um
+            bestimmte Unternehmensziele zu erreichen. Dies umfasst die
+            Recherche, Planung, Produktion, Überarbeitung und Veröffentlichung
+            von Inhalten. Durch hochwertige Inhalte kann ich die Präsenz
+            stärken und langfristige Beziehungen aufbauen.
+          </p>
+          <a href="https://beacons.ai/toycarsaddict" target="”_blank”">Mehr dazu</a>
         </div>
       </div>
     </div>
-    <!------------- projekte ------------>
-    <div id="portfolio">
-      <div class="container" data-aos="fade-up" data-aos-delay="500">
-        <h1 class="sub-title">Meine Projekte</h1>
-        <div class="work-list">
-
-
-          <div class="work" data-aos="flip-up" data-aos-delay="200">
-            <img src="images/work2.webp" alt="Webseite auf Laptop" />
-            <div class="layer">
-              <h3>Toycarsaddict.club</h3>
-              <p>
-                Meine persönliche Herzensangelegenheit, wo Hobby und Beruf
-                zusammenfindet: Eine Webseite als Kernstück für
-                Modellautosammler. Das Projekt wurde mit dem Wordpress CMS
-                erstellt, dazu Elementor als Pagebuilder verwendet, Plugins
-                installiert sowie weiteres HTML, CSS und PHP eingebunden.
-              </p>
-              <a href="https://toycarsaddict.club/" target="_blank"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="work" data-aos="flip-up" data-aos-delay="300">
-            <img src="images/work3.webp" alt="Webseite auf Tablet" />
-            <div class="layer">
-              <h3>Partum Media</h3>
-              <p>
-                Dieses Projekt wird Teil der Bachelorarbeit 2023 der SAE Zürich.
-                Hier gilt es eine Webseite für eine fiktive Webagentur zu
-                erstellen, die mittels HTML, CSS, JavaScript durch das Framework
-                Angular umgesetzt wird. Als CSS-Frontend-Framework nutzen wir
-                Bootstrap. <br />
-                RELEASE DATE ist am 12.08.23
-              </p>
-              <a href="https://github.com/Partum-Media/Website" target="_blank"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-
-          <div class="work" data-aos="flip-up" data-aos-delay="400">
-            <img src="images/work1.webp" alt="Webseite auf Handy" />
-            <div class="layer">
-              <h3>Social Media App</h3>
-              <p>
-                Stärkung der Social Media Präsenz in Bezug auf die japanische
-                JDM Autokulturszene. <br />
-                Dabei diente Beacons.ai als Schnittstelle und Zugangspunkt für
-                soziale Plattformen.
-              </p>
-              <a href="https://beacons.ai/jdmaddict" target="_blank"
-                ><i class="fa-solid fa-arrow-up-right-from-square"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <!------------- Wird im nächsten Schritt in ein "Load More" gesetzt ------------>
-
-        <div class="work-list">
-          <div class="work" data-aos="flip-up" data-aos-delay="500">
-            <img src="images/work4.webp" alt="Pokezone + Rent your rollator" />
-            <div class="layer">
-              <h3>Pokezone / Rent Your Rollator</h3>
-              <p>
-                Zwei Screendesign-Beispiele aus meiner Diploma-Studeinzeit an
-                der SAE in Zürich. Pokezone ist eine fiktiver online Shop für
-                Pokemon-Fans, Rent Your Rollator wiederum war meine erste
-                Berührung mit dem Thema UX/UI Design und Responsive Behaviour.
-              </p>
-            </div>
-          </div>
-
-          <div class="work" data-aos="flip-up" data-aos-delay="600">
-            <img
-              src="images/work5.webp"
-              alt="Toycarsaddict.club und svendolin-productions.ch"
-            />
-            <div class="layer">
-              <h3>Toycarsaddict.club / svendolin-productions.ch</h3>
-              <p>
-                Zwei meiner Webseiten, die bereits online gestellt wurden.
-                Toycarsaddict.club erreicht mittlerweile tausende Nutzer pro
-                Monat und wurde mittels Wordpress CMS sowie Elementor erstellt.
-                Svendolin-productions.ch dient vorerst als eine offizielle
-                Portfolio-Webseite, welche mit statischem Code erstellt wurde.
-              </p>
-            </div>
-          </div>
-
-          <div class="work" data-aos="flip-up" data-aos-delay="700">
-            <img src="images/work6.webp" alt="SwissJDMBlog und the Sketch" />
-            <div class="layer">
-              <h3>Swiss JDM Blog / The Sketch</h3>
-              <p>
-                Diese beiden Webseiten waren weitere Versuchsobjekte in der
-                Studienzeit. Swiss JDM Blog beispielsweise war das erste
-                Projekt, welches mit Object Oriented Programming, PHP und MySQL
-                Datenbanken erstellt wurde. The Sketch hingegen diente dazu,
-                sich mit allerlei CSS und JS-Animationen auseinander zu seten
-                und diese zu implementieren.
-              </p>
-            </div>
-          </div>
-        </div>
-        <a href="#" class="btn" id="load-more">More coming soon!</a>
-      </div>
-    </div>
-    <!------------- contact ------------>
-    <div id="contact">
-      <div class="container">
-        <div class="row" data-aos="fade-up" data-aos-delay="300">
-          <div class="contact-left">
-            <h1 class="sub-title">Kontakt</h1>
+  </div>
+  <!------------- projekte ------------>
+  <div id="portfolio">
+    <div class="container" data-aos="fade-up" data-aos-delay="500">
+      <h1 class="sub-title">Meine Projekte</h1>
+      <div class="work-list">
+        <div class="work" data-aos="flip-up" data-aos-delay="200">
+          <img src="images/work2.webp" alt="Webseite auf Laptop" />
+          <div class="layer">
+            <h3>Toycarsaddict.club</h3>
             <p>
-              <i class="fa-solid fa-paper-plane"></i
-              >mail@svendolin-productions.ch
+              Meine persönliche Herzensangelegenheit, wo Hobby und Beruf
+              zusammenfindet: Eine Webseite als Kernstück für
+              Modellautosammler. Das Projekt wurde mit dem Wordpress CMS
+              erstellt, dazu Elementor als Pagebuilder verwendet, Plugins
+              installiert sowie weiteres HTML, CSS und PHP eingebunden.
             </p>
-            <p><i class="fa-solid fa-square-phone"></i>+41774047883</p>
-            <div class="social-icons">
-              <a href="https://www.linkedin.com/in/svendolin/"
-                ><i class="fa-brands fa-linkedin"></i
-              ></a>
-              <a href="https://github.com/Svendolin"
-                ><i class="fa-brands fa-github"></i
-              ></a>
-            </div>
-            <a href="images/cv/CV_Portfolio.pdf" download class="btn btn2"
-              >CV Herunterladen</a
-            >
+            <a href="https://toycarsaddict.club/" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
-          <div class="contact-right">
-            <form name="submit-to-google-sheet">
-              <input type="text" name="Name" placeholder="Dein Name" required data-aos="fade-left" data-aos-delay="200" />
-              <input
-                type="email"
-                name="Email"
-                placeholder="Deine Email"
-                required
-                data-aos="fade-left" data-aos-delay="500" 
-              />
-              <textarea
-                name="Message"
-                rows="6"
-                placeholder="Was möchtest du mir mitteilen?"
-                data-aos="fade-left" data-aos-delay="600" 
-              ></textarea>
-              <button type="submit" class="btn btn3">Abschicken</button>
-            </form>
-            <span id="msg"></span>
+        </div>
+
+        <div class="work" data-aos="flip-up" data-aos-delay="300">
+          <img src="images/work3.webp" alt="Webseite auf Tablet" />
+          <div class="layer">
+            <h3>Partum Media</h3>
+            <p>
+              Dieses Projekt wird Teil der Bachelorarbeit 2023 der SAE Zürich.
+              Hier gilt es eine Webseite für eine fiktive Webagentur zu
+              erstellen, die mittels HTML, CSS, JavaScript durch das Framework
+              Angular umgesetzt wird. Als CSS-Frontend-Framework nutzen wir
+              Bootstrap. <br />
+              RELEASE DATE ist am 12.08.23
+            </p>
+            <a href="https://github.com/Partum-Media/Website" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+
+        <div class="work" data-aos="flip-up" data-aos-delay="400">
+          <img src="images/work1.webp" alt="Webseite auf Handy" />
+          <div class="layer">
+            <h3>Social Media App</h3>
+            <p>
+              Stärkung der Social Media Präsenz in Bezug auf die japanische
+              JDM Autokulturszene. <br />
+              Dabei diente Beacons.ai als Schnittstelle und Zugangspunkt für
+              soziale Plattformen.
+            </p>
+            <a href="https://beacons.ai/jdmaddict" target="_blank"><i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
           </div>
         </div>
       </div>
+
+      <!------------- Wird im nächsten Schritt in ein "Load More" gesetzt ------------>
+
+      <div class="work-list">
+        <div class="work" data-aos="flip-up" data-aos-delay="500">
+          <img src="images/work4.webp" alt="Pokezone + Rent your rollator" />
+          <div class="layer">
+            <h3>Pokezone / Rent Your Rollator</h3>
+            <p>
+              Zwei Screendesign-Beispiele aus meiner Diploma-Studeinzeit an
+              der SAE in Zürich. Pokezone ist eine fiktiver online Shop für
+              Pokemon-Fans, Rent Your Rollator wiederum war meine erste
+              Berührung mit dem Thema UX/UI Design und Responsive Behaviour.
+            </p>
+          </div>
+        </div>
+
+        <div class="work" data-aos="flip-up" data-aos-delay="600">
+          <img src="images/work5.webp" alt="Toycarsaddict.club und svendolin-productions.ch" />
+          <div class="layer">
+            <h3>Toycarsaddict.club / svendolin-productions.ch</h3>
+            <p>
+              Zwei meiner Webseiten, die bereits online gestellt wurden.
+              Toycarsaddict.club erreicht mittlerweile tausende Nutzer pro
+              Monat und wurde mittels Wordpress CMS sowie Elementor erstellt.
+              Svendolin-productions.ch dient vorerst als eine offizielle
+              Portfolio-Webseite, welche mit statischem Code erstellt wurde.
+            </p>
+          </div>
+        </div>
+
+        <div class="work" data-aos="flip-up" data-aos-delay="700">
+          <img src="images/work6.webp" alt="SwissJDMBlog und the Sketch" />
+          <div class="layer">
+            <h3>Swiss JDM Blog / The Sketch</h3>
+            <p>
+              Diese beiden Webseiten waren weitere Versuchsobjekte in der
+              Studienzeit. Swiss JDM Blog beispielsweise war das erste
+              Projekt, welches mit Object Oriented Programming, PHP und MySQL
+              Datenbanken erstellt wurde. The Sketch hingegen diente dazu,
+              sich mit allerlei CSS und JS-Animationen auseinander zu seten
+              und diese zu implementieren.
+            </p>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn" id="load-more">More coming soon!</a>
     </div>
-    <div class="copyright">
-      <p>
-        Copyright © by Svendolin 2023 - Made with
-        <i class="fa-sharp fa-solid fa-heart"></i> by Svendolin-Productions
-      </p>
+  </div>
+  <!------------- contact ------------>
+  <div id="contact">
+    <div class="container">
+      <div class="row" data-aos="fade-up" data-aos-delay="300">
+        <div class="contact-left">
+          <h1 class="sub-title">Kontakt</h1>
+          <p>
+            <i class="fa-solid fa-paper-plane"></i>mail@svendolin-productions.ch
+          </p>
+          <p><i class="fa-solid fa-square-phone"></i>+41774047883</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/svendolin/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/Svendolin"><i class="fa-brands fa-github"></i></a>
+          </div>
+          <a href="images/cv/CV_Portfolio.pdf" download class="btn btn2">CV Herunterladen</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Dein Name" required data-aos="fade-left" data-aos-delay="200" />
+            <input type="email" name="Email" placeholder="Deine Email" required data-aos="fade-left"
+              data-aos-delay="500" />
+            <textarea name="Message" rows="6" placeholder="Was möchtest du mir mitteilen?" data-aos="fade-left"
+              data-aos-delay="600"></textarea>
+            <button type="submit" class="btn btn3">Abschicken</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
     </div>
-  </body>
+  </div>
+  <div class="copyright">
+    <p>
+      Copyright © by Svendolin 2023 - Made with
+      <i class="fa-sharp fa-solid fa-heart"></i> by Svendolin-Productions
+    </p>
+  </div>
+</body>
+
 </html>
