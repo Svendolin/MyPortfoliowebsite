@@ -478,3 +478,29 @@ form textarea {
 }
 
 /* ======================= Back to Top ======================= */
+
+#myBtn {
+  opacity: 0.5;
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 80px; 
+  right: 30px; 
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; 
+  outline: none; 
+  background-color: var(--main-border-color);
+  color: white; /* Text color */
+  cursor: pointer; 
+  padding: 10px; 
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn i {
+  font-size: 30px;
+}
+
+#myBtn:hover {
+  opacity: 1;
+  background-color: var(--main-icon-color); /* Add a dark-grey background on hover */
+}

@@ -29,7 +29,7 @@ nav .fas {
     top: 0;
     right: -120px; /* Side navigation moved to the right to be hidden */
     width: 120px;
-    height: 38vh;
+    height: 40vh;
     padding-top: 50px;
     z-index: 2;
     transition: right 0.5s;
