@@ -34,8 +34,9 @@ function closemenu() {
 
 
 /* ---------------- SUBMITTER to Google Sheet in the Input field -------------- */
+// Used from: https://github.com/jamiewilson/form-to-google-sheets
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbwmftAUCUkGflvShErUO7cndHWq4fZdWrlEOoaxplMcGGhsvdzzfwoVooU_sdzZz5w6BQ/exec'
+const scriptURL = 'https://script.google.com/macros/s/AKfycbwELTWbUNyBsjWf6x-9aSDcFokHAtsWPT1_wuL9GEswdTgNrpqlpdrF5IjUc9BjMRya/exec'
 const form = document.forms['submit-to-google-sheet']
 const msg = document.getElementById('msg')
 
