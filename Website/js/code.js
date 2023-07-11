@@ -48,8 +48,25 @@ form.addEventListener('submit', e => {
             msg.innerHTML = "Mitteilung erfolgreich gesendet!"
             setTimeout(function () {
                 msg.innerHTML = ""
-            },8000) // After 8 seconds, remove the message
+            }, 8000) // After 8 seconds, remove the message
             form.reset()
         })
         .catch(error => console.error('Error!', error.message))
 })
+
+/* ---------------- LOAD MORE Button bei "Projekte" -------------- */
+
+// let loadMoreBtn = document.getElementById("loadMoreBtn");
+// let currentItem = 3;
+
+// loadMoreBtn.onlick = () => {
+//     let boxes = [...document.querySelectorAll(".work-list .work")];
+//     for (let i = currentItem; i < currentItem + 3; i++) {
+//         boxes[i].style.display = "inline-block";
+//     }
+//     currentItem += 3;
+//     if (currentItem >= boxes.length) {
+//         loadMoreBtn.style.display = "none";
+//     }
+// }
+
