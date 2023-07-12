@@ -3,11 +3,9 @@
 
 ***
 
-# ✔- My Portfoliowebsite (ON AIR SOON) - ✔
+# ✔- My Portfoliowebsite - ✔
 
-_**UNDER CONSTRUCTION**_
-
-<img src="https://media2.giphy.com/media/bit0nI9sZFGExZD8dn/giphy.gif?cid=ecf05e478uuzk0zlxnir3ul6auzzfd0r6m1e84vb80m5dsko&rid=giphy.gif&ct=g" width="200px">
+_**Proudly realized with static code, more to come pretty soon!**_
         
 
 
@@ -18,8 +16,25 @@ _**UNDER CONSTRUCTION**_
 ## Technologies and Installation ✅
 ***
 
-ABC:
-* 123
+1. AOS Animation On Scroll Library
+    - Github https://michalsnik.github.io/aos/
+2. Favicon generator 
+    - Website https://realfavicongenerator.net/
+3. Icons from Fontawesome
+    - Website https://fontawesome.com/
+4. Submitter to Google Sheet
+    - Github https://github.com/jamiewilson/form-to-google-sheets
+
+<br />
+<br />
+
+***
+## Extensions ✅
+***
+
+| must | Name | Creator |  |
+|:--:|:--------------|:-------------:|--------------:|
+| ✔️ | Prettier - Code formatter | Prettier | [link](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) |
 
 
 
@@ -56,7 +71,9 @@ _**More infos:**_
 
 | ELEMENT | USE CASE | 
 |:--------------| :--------------|
-| 123 | ABC |
+| NAV | Fully responsive Navigation |
+| BTTB | Back to the top button |
+|LMB| Load more button (TODO)|
 
 
 
