@@ -283,7 +283,7 @@ nav ul li a:hover::after {
 
 /* ======================= Projekte ======================= */
 
-#portfolio {
+#projekte {
   padding: 30px 5%;
   color: var(--main-text-color);
 }
